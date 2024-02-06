@@ -1,0 +1,243 @@
+[2024-02-05T21:13:21.559-0500] {processor.py:161} INFO - Started process (PID=12682) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:13:21.560-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:13:21.560-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:13:21.560-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:13:24.970-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:13:24.970-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:13:24.971-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:13:25.019-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.460 seconds
+[2024-02-05T21:18:29.668-0500] {processor.py:161} INFO - Started process (PID=12951) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:18:29.669-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:18:29.669-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:18:29.669-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:18:32.440-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:18:32.439-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:18:32.440-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:18:32.485-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.817 seconds
+[2024-02-05T21:19:03.615-0500] {processor.py:161} INFO - Started process (PID=12985) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:19:03.616-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:19:03.616-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:19:03.616-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:19:06.387-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:19:06.386-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:19:06.388-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:19:06.451-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.837 seconds
+[2024-02-05T21:33:58.213-0500] {processor.py:161} INFO - Started process (PID=13510) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:33:58.214-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:33:58.214-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:33:58.214-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:34:01.088-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:34:01.087-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:34:01.088-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:34:01.130-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.917 seconds
+[2024-02-05T21:34:32.292-0500] {processor.py:161} INFO - Started process (PID=13554) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:34:32.293-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:34:32.293-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:34:32.293-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:34:35.079-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:34:35.078-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:34:35.079-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:34:35.123-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.832 seconds
+[2024-02-05T21:35:06.020-0500] {processor.py:161} INFO - Started process (PID=13579) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:06.021-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:35:06.021-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:35:06.021-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:08.537-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:35:08.536-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connectionProperties'
+[2024-02-05T21:35:08.537-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:08.603-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.583 seconds
+[2024-02-05T21:35:39.676-0500] {processor.py:161} INFO - Started process (PID=13611) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:39.677-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:35:39.677-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:35:39.677-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:42.495-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:35:42.494-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connection_id'
+[2024-02-05T21:35:42.495-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:35:42.557-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 2.882 seconds
+[2024-02-05T21:36:13.635-0500] {processor.py:161} INFO - Started process (PID=13651) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:13.637-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:36:13.637-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:36:13.637-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:16.595-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:36:16.594-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connection_id'
+[2024-02-05T21:36:16.595-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:16.660-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.025 seconds
+[2024-02-05T21:36:47.821-0500] {processor.py:161} INFO - Started process (PID=13683) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:47.822-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:36:47.823-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:36:47.823-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:50.775-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:36:50.775-0500] {dagbag.py:348} ERROR - Failed to import: /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/Users/ayushi/PycharmProjects/etl/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 35, in <module>
+    etl()
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py", line 11, in etl
+    load_df_to_db(df)
+  File "/Users/ayushi/PycharmProjects/etl/airflow/dags/transformations.py", line 63, in load_df_to_db
+    df.write.jdbc(url=url, table=table, mode=mode, properties=properties,
+TypeError: DataFrameWriter.jdbc() got an unexpected keyword argument 'connection_id'
+[2024-02-05T21:36:50.775-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:36:50.838-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.017 seconds
+[2024-02-05T21:37:21.934-0500] {processor.py:161} INFO - Started process (PID=13719) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:37:21.936-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:37:21.936-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:21.936-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:37:26.204-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:37:26.342-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.342-0500] {override.py:1769} INFO - Created Permission View: can edit on DAG:etl_pipeline
+[2024-02-05T21:37:26.347-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.347-0500] {override.py:1769} INFO - Created Permission View: can read on DAG:etl_pipeline
+[2024-02-05T21:37:26.351-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.350-0500] {override.py:1769} INFO - Created Permission View: can delete on DAG:etl_pipeline
+[2024-02-05T21:37:26.351-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.351-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:37:26.357-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.356-0500] {dag.py:3058} INFO - Creating ORM DAG for etl_pipeline
+[2024-02-05T21:37:26.362-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:26.362-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-05 00:00:00+00:00, run_after=2024-02-06 00:00:00+00:00
+[2024-02-05T21:37:26.373-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 4.439 seconds
+[2024-02-05T21:37:57.434-0500] {processor.py:161} INFO - Started process (PID=13764) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:37:57.435-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:37:57.436-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:37:57.436-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:38:01.635-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:38:01.706-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:38:01.706-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:38:01.719-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:38:01.719-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-05 00:00:00+00:00, run_after=2024-02-06 00:00:00+00:00
+[2024-02-05T21:38:01.729-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 4.295 seconds
+[2024-02-05T21:38:32.744-0500] {processor.py:161} INFO - Started process (PID=13797) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:38:32.745-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:38:32.745-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:38:32.745-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:38:36.985-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:38:37.059-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:38:37.059-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:38:37.072-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:38:37.072-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-05 00:00:00+00:00, run_after=2024-02-06 00:00:00+00:00
+[2024-02-05T21:38:37.082-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 4.338 seconds
+[2024-02-05T21:39:07.975-0500] {processor.py:161} INFO - Started process (PID=13847) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:07.975-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:39:07.976-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:07.976-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:11.628-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:11.704-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:11.703-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:39:11.715-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:11.715-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-05 00:00:00+00:00, run_after=2024-02-06 00:00:00+00:00
+[2024-02-05T21:39:11.724-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.749 seconds
+[2024-02-05T21:39:42.647-0500] {processor.py:161} INFO - Started process (PID=13888) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:42.648-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:39:42.648-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:42.648-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:46.132-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:39:46.219-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:46.219-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:39:46.232-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:39:46.232-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-05 00:00:00+00:00, run_after=2024-02-06 00:00:00+00:00
+[2024-02-05T21:39:46.241-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.594 seconds
+[2024-02-05T21:40:17.348-0500] {processor.py:161} INFO - Started process (PID=14049) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:17.349-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:40:17.349-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:17.349-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:21.485-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:21.546-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:21.546-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:40:21.560-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:21.560-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:40:21.570-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 4.223 seconds
+[2024-02-05T21:40:52.596-0500] {processor.py:161} INFO - Started process (PID=14092) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:52.598-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:40:52.598-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:52.598-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:57.868-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:40:57.937-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:57.937-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:40:57.949-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:40:57.949-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:40:57.959-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 5.363 seconds
+[2024-02-05T21:41:29.047-0500] {processor.py:161} INFO - Started process (PID=14136) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:41:29.048-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:41:29.048-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:41:29.048-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:41:33.201-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:41:33.272-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:41:33.271-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:41:33.285-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:41:33.285-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:41:33.294-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 4.248 seconds
+[2024-02-05T21:42:04.172-0500] {processor.py:161} INFO - Started process (PID=14175) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:04.172-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:42:04.172-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:04.172-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:07.625-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:07.696-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:07.696-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:42:07.709-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:07.709-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:42:07.717-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.546 seconds
+[2024-02-05T21:42:38.612-0500] {processor.py:161} INFO - Started process (PID=14209) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:38.612-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:42:38.612-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:38.612-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:42.167-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:42:42.238-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:42.238-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:42:42.251-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:42:42.250-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:42:42.260-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.648 seconds
+[2024-02-05T21:43:13.191-0500] {processor.py:161} INFO - Started process (PID=14244) to work on /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:43:13.191-0500] {processor.py:830} INFO - Processing file /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py for tasks to queue
+[2024-02-05T21:43:13.192-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:43:13.192-0500] {dagbag.py:538} INFO - Filling up the DagBag from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:43:16.632-0500] {processor.py:840} INFO - DAG(s) 'etl_pipeline' retrieved from /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py
+[2024-02-05T21:43:16.704-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:43:16.704-0500] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-05T21:43:16.716-0500] {logging_mixin.py:188} INFO - [2024-02-05T21:43:16.716-0500] {dag.py:3823} INFO - Setting next_dagrun for etl_pipeline to 2024-02-06 00:00:00+00:00, run_after=2024-02-07 00:00:00+00:00
+[2024-02-05T21:43:16.726-0500] {processor.py:183} INFO - Processing /Users/ayushi/PycharmProjects/etl/airflow/dags/dags.py took 3.535 seconds

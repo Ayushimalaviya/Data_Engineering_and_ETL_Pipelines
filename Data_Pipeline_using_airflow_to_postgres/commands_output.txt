@@ -1,0 +1,12 @@
+ 1317  pkill -f "airflow webserver"
+ 1318  export AIRFLOW_HOME=~/PycharmProjects/etl/airflow
+ 1319  airflow db reset
+ 1320  airflow users create --username ETLPIPE --firstname ayushi --lastname malaviya --role Admin --email example@example.com
+ 1321  lsof -i :8080
+ 1323  ps aux | grep airflow
+ 1324  airflow webserver -D
+ 1325  ps aux | grep airflow
+ 1326  airflow scheduler
+ 1327  lsof -i :8080
+ 1328  kill 13358 13364 13365 13366 13386
+ 1329  clear
